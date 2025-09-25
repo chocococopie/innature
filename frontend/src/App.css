@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  max-width: 350px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+}
+
+.why {
+  text-align: center;
+}
+
+.why h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.why p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.threats {
+  background: #FFD43B;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.threats h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.stat-card .label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.stat-card .value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Cards Section */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h4 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 2rem 1rem;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.contact-form button {
+  width: 100%;
+  background: #28a745;
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #218838;
+}
+
+/* Footer Nav */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Bottom nav bar like in screenshot */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
